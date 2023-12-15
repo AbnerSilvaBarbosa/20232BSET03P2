@@ -125,7 +125,7 @@ app.get('/cats', (req, res) => {
 });
 
 app.get('/dogs', (req, res) => {
-  db.all("SELECT * FROM cats", [], (err, rows) => {
+  db.all("SELECT * FROM dogs", [], (err, rows) => {
     if (err) {
       res.status(500).send("Erro ao consultar o banco de dados");
     } else {
